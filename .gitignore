@@ -1,3 +1,5 @@
 *.o
 *.a
 *.toml
+tests/
+libasmTester/
