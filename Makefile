@@ -1,11 +1,13 @@
-NAME	=	libasm.a
+NAME		=	libasm.a
 
-ASM = nasm
+ASM			=	nasm
 ASMFLAGS	=	-f elf64
 
-SRC	=	ft_strlen.s
+SRC			=	ft_strlen.s		\
+				ft_strcpy.s		\
+				ft_strcmp.s
 
-OBJ = $(SRC:.s=.o)
+OBJ			=	$(SRC:.s=.o)
 
 all: $(NAME)
 
