@@ -9,15 +9,15 @@ section .text
 global ft_strlen
 
 ft_strlen:
-xor length, length 
+    xor length, length 
 
 
 start_loop:
-movzx current_char, byte [str + length]
-cmp current_char, 0
-je loop_exit
-inc length
-jmp start_loop
+    movzx current_char, byte [str + length]
+    cmp current_char, 0
+    je loop_exit
+    inc length
+    jmp start_loop
 
 loop_exit:
-ret
+    ret
